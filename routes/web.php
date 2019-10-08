@@ -16,6 +16,7 @@ Route::get('/hello', function () {
  });
 
 
+ Route::group(['middleware' => 'cors'], function(){
 
 //Route::resource('/', 'TasksController@getAll')->name('getAllProducts');
 //Route::resource('tasks', 'TasksController');
@@ -25,4 +26,4 @@ Route::post('acarreos/', 'AcarreosController@store');
 Route::post('user/', 'UsuariosController@store');
 Route::post('user/show', 'UsuariosController@show');
 
-
+ });
