@@ -25,5 +25,10 @@ Route::get('acarreos/', 'AcarreosController@index');
 Route::post('acarreos/', 'AcarreosController@store');
 Route::post('user/', 'UsuariosController@store');
 Route::post('user/show', 'UsuariosController@show');
+Route::post('webhook/','webhookController@store');
 
+
+
+/*** SERVICES */
+Route::post('/services','ServicesController@stored');
  });

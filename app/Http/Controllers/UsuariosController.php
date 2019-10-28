@@ -36,6 +36,10 @@ class UsuariosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
+     /* CREAR USUARIOS ***********************************/
+
     public function store(Request $request)
     {
         //
@@ -59,8 +63,10 @@ class UsuariosController extends Controller
                       
                     ]);
 
-                  $respuesta= response()->json(['respuesta'=>array(['code'=>200,'message'=>'Registro creado correctamente.'])],422);
-                   return json_encode($respuesta); 
+                  //$respuesta= response()->json(['respuesta'=>array(['code'=>200,'message'=>'Registro creado correctamente.'])],422);
+                  
+                   $respuesta=array('code'=>'200','estado'=>'1','message'=>'creado correcto'); 
+                  return json_encode($respuesta); 
     } 
 
     /**
