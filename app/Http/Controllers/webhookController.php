@@ -15,7 +15,7 @@ class webhookController extends Controller
     public function index()
     {
         //
-        //hola
+        
     }
 
     /**
